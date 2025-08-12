@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --color-primary: #1d2021;
+    --color-secondary:#504945;
+    --color-tertiary: #C4C4C4;
+    --color-button: #d3869b;
+    --color-button-hover: #b16286;
+    --color-text: #444444;
+    --color-white: #ebdbb2;
+    --color-positive: #8ec07c;
+    --color-negative: #fb4934;
+    --font-family: "Press Start 2P", sans-serif;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+    gap: 2%;
+}
+.img-banner{
+    width: 10%;
+}
+
+
+/* Seção de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: var(--font-family);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contêineres de entrada e botão */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 1rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    width: 300px;
+    justify-content: center;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: var(--font-family);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de botão */
+button {
+    padding: 15px 30px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: var(--color-positive);
+    font-size: 1rem;
+    font-family: var(--font-family);
+    font-weight: bold;
+    text-align: center;
+}
+
+.warning {
+    margin-top: 15px;
+    color: var(--color-negative);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+/* Botão de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
+
+.button-draw img {
+    margin-right: 40px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+.button-reset {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
+
+.button-reset img {
+    margin-right: 40px;
+}
+
+.button-reset:hover {
+    background-color: var(--color-button-hover);
+}
+
+.button-reset:disabled {
+    background-color: #b5b5b5;
+    color: var(--color-text);
+}
+
+.button-reset:hover:disabled {
+    background-color: #b5b5b5;
+    color: var(--color-text);
+}
